@@ -28,7 +28,9 @@
     <div class="hero-text">
       <div class="hero-badge">✅ Available for Work</div>
       <h1>Lester Lloyd Laynes</h1>
-      <h2>General Virtual Assistant</h2>
+      <h2 class="hero-carousel" aria-live="polite">
+        <span class="carousel-text" id="carouselText">Admin Assistant</span>
+      </h2>
       <div class="hero-meta">
         <span>📍 Dubai, United Arab Emirates</span>
         <span>📧 lesterlh.laynes@gmail.com</span>
@@ -291,6 +293,21 @@
   function validateEmail(val) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
   }
+
+  (function () {
+    const titles = ['Admin Assistant', 'E-Commerce Specialist', 'Technical Support'];
+    let idx = 0;
+    const el = document.getElementById('carouselText');
+    el.classList.add('carousel-in');
+    setInterval(function () {
+      el.classList.replace('carousel-in', 'carousel-out');
+      setTimeout(function () {
+        idx = (idx + 1) % titles.length;
+        el.textContent = titles[idx];
+        el.classList.replace('carousel-out', 'carousel-in');
+      }, 420);
+    }, 2800);
+  })();
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
