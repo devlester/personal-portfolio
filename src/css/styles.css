@@ -28,7 +28,12 @@ nav{position:fixed;top:0;width:100%;background:rgba(13,31,51,0.97);backdrop-filt
 .hero-text{flex:1;min-width:280px;}
 .hero-badge{display:inline-block;background:rgba(42,125,212,0.25);color:var(--accent2);font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:6px 16px;border-radius:50px;margin-bottom:20px;border:1px solid rgba(74,158,232,0.3);}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);line-height:1.2;color:#fff;margin-bottom:8px;}
-.hero h2{font-size:1.1rem;color:var(--accent2);font-weight:400;letter-spacing:1px;margin-bottom:18px;}
+.hero-carousel{font-size:1.1rem;color:var(--accent2);font-weight:400;letter-spacing:1px;margin-bottom:18px;overflow:hidden;height:1.65em;}
+.carousel-text{display:block;}
+.carousel-in{animation:carouselIn .42s cubic-bezier(.22,.61,.36,1) forwards;}
+.carousel-out{animation:carouselOut .42s cubic-bezier(.55,0,1,.45) forwards;}
+@keyframes carouselIn{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+@keyframes carouselOut{from{opacity:1;transform:translateY(0);}to{opacity:0;transform:translateY(-18px);}}
 .hero-meta{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:28px;}
 .hero-meta span{color:rgba(255,255,255,0.7);font-size:0.9rem;display:flex;align-items:center;gap:6px;}
 .hero p{font-size:1rem;color:rgba(255,255,255,0.8);line-height:1.8;max-width:500px;margin-bottom:32px;}
