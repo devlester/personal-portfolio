@@ -3,66 +3,89 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Lester Lloyd Laynes — Virtual Assistant</title>
+<title>Lester Lloyd Laynes — Virtual Assistant & Operations Support</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="src/css/styles.css"/>
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
+<nav id="navbar">
   <div class="logo">Lester <span>Laynes</span></div>
-  <ul class="nav-links">
+  <ul class="nav-links" id="navLinks">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#my-works">My Works</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li class="nav-cta-mobile"><a href="#contact" class="nav-cta-link">Hire Me</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Hire Me</a>
+  <div class="nav-right">
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
   <div class="hero-inner">
     <div class="hero-text">
       <div class="hero-badge">✅ Available for Work</div>
-      <h1>Lester Lloyd Laynes</h1>
+      <h1>Lester Lloyd <span class="hero-accent">Laynes</span></h1>
       <h2 class="hero-carousel" aria-live="polite">
         <span class="carousel-text" id="carouselText">Admin Assistant</span>
       </h2>
       <div class="hero-meta">
-        <span>📍 Dubai, United Arab Emirates</span>
+        <span>📍 Dubai, UAE</span>
         <span>📧 lesterlh.laynes@gmail.com</span>
         <span>📱 +971 50 301 5307</span>
       </div>
-      <p>Highly organized operations support professionals with hands-on experience in administrative management, inventory control, warehouse operations, and Excel-based reporting. Developed automated inventory tracking systems that improved stock visibility, streamlined reporting processes, and supported accurate day-to-day inventory monitoring. Experienced in coordinating business operations, maintaining organized records, and providing dependable administrative support in fast-paced environments. Skilled in Microsoft Excel, data management, workflow coordination, and operational reporting with a strong focus on efficiency, accuracy, and business support.</p>
+      <p>Operations & admin support professional with 4+ years handling inventory management, Excel-based reporting, and business coordination. I build efficient systems that keep businesses organized and running smoothly.</p>
       <div class="hero-btns">
         <a href="#services" class="btn-primary">View My Services</a>
         <a href="#contact" class="btn-secondary">Let's Work Together</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Years Exp.</div></div>
-        <div class="stat"><div class="stat-num">4</div><div class="stat-label">Service Areas</div></div>
-        <div class="stat"><div class="stat-num">8+</div><div class="stat-label">Tools & Apps</div></div>
+        <div class="stat">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Years Exp.</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Service Areas</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Tools & Apps</div>
+        </div>
       </div>
     </div>
     <div class="hero-image">
+      <div class="avatar-ring-outer"></div>
       <div class="avatar-wrap">
         <img src="src/img/profile-img.png" alt="Lester Lloyd Laynes"/>
       </div>
     </div>
   </div>
+  <a href="#about" class="scroll-down-cta" aria-label="Scroll to About section">
+    <div class="scroll-chevron"></div>
+  </a>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="about-inner">
-    <div class="about-text" style="flex:2">
+    <div class="about-text">
       <div class="section-label">About Me</div>
       <h2 class="section-title">Organized, Reliable & Operations-Ready</h2>
-      <p>I’m an operations and administrative support professional based in Dubai with hands-on experience in administrative tasks, inventory management, warehouse operations, and Excel reporting. I enjoy helping businesses stay organized and run more efficiently by creating smooth workflows and reliable support systems.</p>
-      <p>I’m a fast learner who adapts quickly, works well independently, and values clear communication and attention to detail. Whether it’s managing reports, organizing files, coordinating with suppliers, or handling day-to-day operational tasks, I always aim to deliver accurate work and dependable support that businesses can rely on.</p>
+      <p>I'm an operations and administrative support professional based in Dubai with hands-on experience in administrative tasks, inventory management, warehouse operations, and Excel reporting. I enjoy helping businesses stay organized and run more efficiently by creating smooth workflows and reliable support systems.</p>
+      <p>I'm a fast learner who adapts quickly, works well independently, and values clear communication and attention to detail. Whether it's managing reports, organizing files, coordinating with suppliers, or handling day-to-day operational tasks, I always aim to deliver accurate work and dependable support that businesses can rely on.</p>
       <div class="why-grid">
         <div class="why-item">✔ Detail-Oriented</div>
         <div class="why-item">✔ Organized & Reliable</div>
@@ -78,10 +101,10 @@
       <div class="avail-item"><div class="avail-dot"></div>Full-Time Work</div>
       <div class="avail-item"><div class="avail-dot"></div>Project-Based Tasks</div>
       <div class="avail-item"><div class="avail-dot"></div>Long-Term Support</div>
-      <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.1);">
-        <div style="color:rgba(255,255,255,0.5);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">Location</div>
-        <div style="color:rgba(255,255,255,0.85);font-size:0.9rem;">📍 Dubai, UAE</div>
-        <div style="color:rgba(255,255,255,0.85);font-size:0.9rem;margin-top:6px;">🌍 Open to Remote Work</div>
+      <div class="avail-location">
+        <div class="avail-location-label">Location</div>
+        <div>📍 Dubai, UAE</div>
+        <div>🌍 Open to Remote Work</div>
       </div>
     </div>
   </div>
@@ -89,7 +112,7 @@
 
 <!-- SERVICES -->
 <section id="services">
-  <div style="max-width:1100px;margin:auto;">
+  <div class="section-container">
     <div class="centered">
       <div class="section-label">What I Do</div>
       <h2 class="section-title">Services Offered</h2>
@@ -143,6 +166,164 @@
           <li>Canva Graphics</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- MY WORKS -->
+<section id="my-works">
+  <div class="section-container">
+    <div class="centered">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">My Works</h2>
+      <p class="section-sub">Real projects showcasing my skills in Excel automation, e-commerce management, and business operations.</p>
+    </div>
+    <div class="works-grid">
+
+      <div class="work-card"
+           data-img="src/myWorks/Excel-20260517T133451Z-3-001/Excel/Organizing.PNG"
+           data-title="Excel File Organization System">
+        <div class="work-img-wrap">
+          <img src="src/myWorks/Excel-20260517T133451Z-3-001/Excel/Organizing.PNG"
+               alt="Excel File Organization System" loading="lazy"/>
+          <div class="work-overlay">
+            <button class="work-view-btn" aria-label="View full image">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Project
+            </button>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>Excel File Organization System</h3>
+          <p>Automated Excel-based system for batch folder creation from spreadsheet lists and structured file management — eliminating hours of manual folder-by-folder setup.</p>
+          <div class="work-tags">
+            <span class="work-tag">Excel</span>
+            <span class="work-tag">Automation</span>
+            <span class="work-tag">File Management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card"
+           data-img="src/myWorks/NoonPartners-20260517T133455Z-3-001/NoonPartners/My Catalog.PNG"
+           data-title="NoonPartners Catalog Management">
+        <div class="work-img-wrap">
+          <img src="src/myWorks/NoonPartners-20260517T133455Z-3-001/NoonPartners/My Catalog.PNG"
+               alt="NoonPartners Catalog Management" loading="lazy"/>
+          <div class="work-overlay">
+            <button class="work-view-btn" aria-label="View full image">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Project
+            </button>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>NoonPartners Catalog Management</h3>
+          <p>Managed complete product catalog listings on the Noon.com marketplace, ensuring accurate product data, pricing, and inventory availability for smooth customer experience.</p>
+          <div class="work-tags">
+            <span class="work-tag">E-Commerce</span>
+            <span class="work-tag">Noon</span>
+            <span class="work-tag">Catalog</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card"
+           data-img="src/myWorks/Shopify-20260517T133505Z-3-001/Shopify/Product Listing -1.PNG"
+           data-title="Shopify Product Listing">
+        <div class="work-img-wrap">
+          <img src="src/myWorks/Shopify-20260517T133505Z-3-001/Shopify/Product Listing -1.PNG"
+               alt="Shopify Product Listing" loading="lazy"/>
+          <div class="work-overlay">
+            <button class="work-view-btn" aria-label="View full image">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Project
+            </button>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>Shopify Store Operations</h3>
+          <p>Handled end-to-end Shopify store management — detailed product listing creation, inventory updates, and order fulfillment processing for a smooth online retail operation.</p>
+          <div class="work-tags">
+            <span class="work-tag">Shopify</span>
+            <span class="work-tag">E-Commerce</span>
+            <span class="work-tag">Product Management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card"
+           data-img="src/myWorks/Web Development-20260517T133452Z-3-001/Web Development/Dashboard.PNG"
+           data-title="Business Intelligence Dashboard">
+        <div class="work-img-wrap">
+          <img src="src/myWorks/Web Development-20260517T133452Z-3-001/Web Development/Dashboard.PNG"
+               alt="Business Intelligence Dashboard" loading="lazy"/>
+          <div class="work-overlay">
+            <button class="work-view-btn" aria-label="View full image">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Project
+            </button>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>Business Intelligence Dashboard</h3>
+          <p>Built a web-based dashboard for real-time monitoring of KPIs, inventory levels, and operational metrics — giving management a clear, up-to-date view of business performance.</p>
+          <div class="work-tags">
+            <span class="work-tag">Web Development</span>
+            <span class="work-tag">Dashboard</span>
+            <span class="work-tag">Reporting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card"
+           data-img="src/myWorks/NoonPartners-20260517T133455Z-3-001/NoonPartners/Order Fullfilment.PNG"
+           data-title="Noon Order Fulfillment Tracking">
+        <div class="work-img-wrap">
+          <img src="src/myWorks/NoonPartners-20260517T133455Z-3-001/NoonPartners/Order Fullfilment.PNG"
+               alt="Noon Order Fulfillment Tracking" loading="lazy"/>
+          <div class="work-overlay">
+            <button class="work-view-btn" aria-label="View full image">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Project
+            </button>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>Noon Order Fulfillment Tracking</h3>
+          <p>Monitored and processed customer orders through the NoonPartners platform, tracking fulfillment status to ensure accurate dispatching and timely delivery coordination.</p>
+          <div class="work-tags">
+            <span class="work-tag">Order Management</span>
+            <span class="work-tag">Noon</span>
+            <span class="work-tag">Fulfillment</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card"
+           data-img="src/myWorks/Excel-20260517T133451Z-3-001/Excel/Creating Folder from list.PNG"
+           data-title="Batch Folder Creation from Excel List">
+        <div class="work-img-wrap">
+          <img src="src/myWorks/Excel-20260517T133451Z-3-001/Excel/Creating Folder from list.PNG"
+               alt="Batch Folder Creation from Excel List" loading="lazy"/>
+          <div class="work-overlay">
+            <button class="work-view-btn" aria-label="View full image">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Project
+            </button>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>Batch Folder Creation from Excel</h3>
+          <p>Developed a macro-driven Excel solution to create hundreds of named folders automatically from a spreadsheet list — transforming a multi-hour task into a single click.</p>
+          <div class="work-tags">
+            <span class="work-tag">Excel</span>
+            <span class="work-tag">VBA / Macro</span>
+            <span class="work-tag">Automation</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -209,44 +390,13 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div style="max-width:1100px;margin:auto;">
-    <div class="centered">
-      <div class="section-label">Sample Projects</div>
-      <h2 class="section-title">Work I've Done</h2>
-      <p class="section-sub">Real-world projects showcasing my skills in operations, reporting, and business organization.</p>
-    </div>
-    <div class="projects-grid">
-      <div class="proj-card">
-        <div class="proj-icon">📋</div>
-        <h3>Inventory Monitoring System</h3>
-        <p>Created inventory tracking sheets with automated stock monitoring and reporting features using Excel — enabling real-time visibility into stock levels and movement.</p>
-        <span class="proj-tag">Excel · Inventory</span>
-      </div>
-      <div class="proj-card">
-        <div class="proj-icon">📈</div>
-        <h3>Sales & Purchase Monitoring</h3>
-        <p>Developed organized reports for tracking sales, purchase orders, and inventory movement — giving management a clear, up-to-date picture of business activity.</p>
-        <span class="proj-tag">Reporting · Operations</span>
-      </div>
-      <div class="proj-card">
-        <div class="proj-icon">🗃️</div>
-        <h3>Administrative File Organization</h3>
-        <p>Managed and organized digital records, reports, and operational documents into structured filing systems for easy access, retrieval, and tracking.</p>
-        <span class="proj-tag">Admin · Documentation</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
     <div class="contact-info">
       <div class="section-label">Get in Touch</div>
       <h2 class="section-title">Let's Work Together</h2>
-      <p>Looking for reliable support for your business? I help businesses stay organized, efficient, and productive through dependable administrative and operational assistance. Send me a message — I’d love to learn more about your business and how I can support your daily operations.</p>
+      <p>Looking for reliable support for your business? I help businesses stay organized, efficient, and productive. Send me a message — I'd love to learn more about your needs and how I can help.</p>
       <div class="contact-item">📧 <a href="mailto:lesterlh.laynes@gmail.com">lesterlh.laynes@gmail.com</a></div>
       <div class="contact-item">📱 <a href="https://wa.me/971503015307">+971 50 301 5307 (WhatsApp)</a></div>
       <div class="contact-item">📍 Dubai, United Arab Emirates</div>
@@ -281,19 +431,33 @@
   <p>© 2026 <span>Lester Lloyd Laynes</span> — Helping businesses stay organized and efficient.</p>
 </footer>
 
+<!-- LIGHTBOX MODAL -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">✕</button>
+    <p class="lightbox-title" id="lightboxTitle"></p>
+    <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!--
+  EMAILJS SETUP (optional – the form works without it via mailto fallback):
+  1. Sign up free at https://www.emailjs.com
+  2. Connect your Gmail/Outlook under "Email Services"
+  3. Create an Email Template (use variables: {{name}}, {{email}}, {{message}})
+  4. Copy your Public Key, Service ID, and Template ID
+  5. Uncomment the script tag below and replace the placeholder values in the JS block
+-->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
+
 <script>
-  const form = document.getElementById('contactForm');
-  const statusEl = document.getElementById('formStatus');
-
-  function showError(inputId, errorId, show) {
-    document.getElementById(errorId).style.display = show ? 'block' : 'none';
-    document.getElementById(inputId).style.borderColor = show ? '#f87171' : '';
-  }
-
-  function validateEmail(val) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
-  }
-
+  /* ── Carousel ── */
   (function () {
     const titles = ['Admin Assistant', 'E-Commerce Specialist', 'Technical Support'];
     let idx = 0;
@@ -309,49 +473,141 @@
     }, 2800);
   })();
 
-  form.addEventListener('submit', async function (e) {
+  /* ── Hamburger menu ── */
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', function () {
+    const isOpen = navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navLinks.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ── Scroll-to-top ── */
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', function () {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 480);
+  });
+  scrollTopBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ── Lightbox ── */
+  const lightbox         = document.getElementById('lightbox');
+  const lightboxImg      = document.getElementById('lightboxImg');
+  const lightboxTitle    = document.getElementById('lightboxTitle');
+  const lightboxClose    = document.getElementById('lightboxClose');
+  const lightboxBackdrop = document.getElementById('lightboxBackdrop');
+
+  document.querySelectorAll('.work-card').forEach(function (card) {
+    card.querySelector('.work-view-btn').addEventListener('click', function (e) {
+      e.stopPropagation();
+      lightboxImg.src     = card.dataset.img;
+      lightboxImg.alt     = card.dataset.title;
+      lightboxTitle.textContent = card.dataset.title;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    lightboxImg.src = '';
+  }
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxBackdrop.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  /* ── Contact Form ── */
+  const form     = document.getElementById('contactForm');
+  const statusEl = document.getElementById('formStatus');
+
+  function showError(inputId, errorId, show) {
+    document.getElementById(errorId).style.display = show ? 'block' : 'none';
+    document.getElementById(inputId).style.borderColor = show ? '#f87171' : '';
+  }
+
+  function validateEmail(val) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+  }
+
+  /*
+    EmailJS credentials — replace if you have set up EmailJS:
+    - Sign up at https://www.emailjs.com (free tier: 200 emails/month)
+    - Also uncomment the EmailJS <script> tag above the closing </body>
+  */
+  var EMAILJS_PUBLIC_KEY   = 'YOUR_PUBLIC_KEY';
+  var EMAILJS_SERVICE_ID   = 'YOUR_SERVICE_ID';
+  var EMAILJS_TEMPLATE_ID  = 'YOUR_TEMPLATE_ID';
+
+  var emailjsReady = (typeof emailjs !== 'undefined') && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY';
+  if (emailjsReady) emailjs.init(EMAILJS_PUBLIC_KEY);
+
+  form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
+    var name    = form.name.value.trim();
+    var email   = form.email.value.trim();
+    var message = form.message.value.trim();
 
-    let valid = true;
-    showError('name', 'nameError', !name);
-    showError('email', 'emailError', !validateEmail(email));
+    showError('name',    'nameError',    !name);
+    showError('email',   'emailError',   !validateEmail(email));
     showError('message', 'messageError', !message);
-    if (!name || !validateEmail(email) || !message) valid = false;
-    if (!valid) return;
+    if (!name || !validateEmail(email) || !message) return;
 
-    const btn = form.querySelector('.btn-send');
+    var btn = form.querySelector('.btn-send');
     btn.disabled = true;
     btn.textContent = 'Sending…';
     statusEl.style.display = 'none';
     statusEl.className = 'form-status';
 
-    try {
-      // Replace YOUR_FORM_ID below with your Formspree form ID (formspree.io)
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-        method: 'POST',
-        headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
-        body: JSON.stringify({name, email, message})
-      });
+    if (emailjsReady) {
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+        .then(function () {
+          statusEl.textContent = '✅ Message sent! I\'ll get back to you within 24 hours.';
+          statusEl.classList.add('success');
+          statusEl.style.display = 'block';
+          form.reset();
+          btn.disabled = false;
+          btn.textContent = 'Send Message';
+        }, function () {
+          statusEl.textContent = '❌ Send failed. Please email me directly at lesterlh.laynes@gmail.com';
+          statusEl.classList.add('error');
+          statusEl.style.display = 'block';
+          btn.disabled = false;
+          btn.textContent = 'Send Message';
+        });
+    } else {
+      /* Mailto fallback — always works, opens the user's email client */
+      var subject = encodeURIComponent('Portfolio Inquiry from ' + name);
+      var body    = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+      window.location.href = 'mailto:lesterlh.laynes@gmail.com?subject=' + subject + '&body=' + body;
 
-      if (res.ok) {
-        statusEl.textContent = '✅ Message sent! I\'ll get back to you within 24 hours.';
-        statusEl.classList.add('success');
-        form.reset();
-      } else {
-        throw new Error('Server error');
-      }
-    } catch {
-      statusEl.textContent = '❌ Something went wrong. Please email me directly at lesterlh.laynes@gmail.com';
-      statusEl.classList.add('error');
-    } finally {
+      statusEl.textContent = '📧 Opening your email client… You can also reach me directly at lesterlh.laynes@gmail.com';
+      statusEl.classList.add('success');
       statusEl.style.display = 'block';
       btn.disabled = false;
       btn.textContent = 'Send Message';
     }
+  });
+
+  /* Clear field error styling on input */
+  ['name', 'email', 'message'].forEach(function (id) {
+    document.getElementById(id).addEventListener('input', function () {
+      showError(id, id + 'Error', false);
+    });
   });
 </script>
 
