@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data cleanup sample — Lester Laynes, Virtual Assistant</title>
+    <meta
+      name="description"
+      content="Before and after: a messy customer list cleaned in Excel with TRIM, PROPER, INDEX/MATCH and COUNTIF. Sample by Lester Laynes, virtual assistant."
+    />
+    <meta name="theme-color" content="#f6f5ef" />
+    <meta
+      property="og:title"
+      content="Data cleanup sample — Lester Laynes, Virtual Assistant"
+    />
+    <meta
+      property="og:description"
+      content="Before and after: a messy customer list cleaned in Excel with TRIM, PROPER, INDEX/MATCH and COUNTIF. Sample by Lester Laynes, virtual assistant."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://lester-personal-portfolio.vercel.app/samples/data-cleanup"
+    />
+    <meta
+      property="og:image"
+      content="https://lester-personal-portfolio.vercel.app/og-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="canonical"
+      href="https://lester-personal-portfolio.vercel.app/samples/data-cleanup"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/samples/samples.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header sample-header wrap">
+      <a class="brand" href="/" aria-label="Lester Laynes home"
+        ><span class="brand-mark" aria-hidden="true">l<span>.</span></span
+        >Lester Laynes<span class="brand-dot">.</span></a
+      >
+      <nav aria-label="VA samples">
+        <a href="/samples/data-cleanup">Data cleanup</a
+        ><a href="/samples/task-tracker">Task tracker</a
+        ><a href="/samples/shopify-listing-sop">Shopify SOP</a>
+      </nav>
+      <a class="header-contact" href="/#samples"
+        ><span aria-hidden="true" style="margin: 0 12px 0 0">←</span>Back to
+        portfolio</a
+      >
+    </header>
+    <main id="main">
+      <section class="wrap sample-hero">
+        <p class="eyebrow">
+          <span class="tiny-star" aria-hidden="true">✳</span> VA SAMPLE · DATA
+          ENTRY & CLEANUP
+        </p>
+        <h1>From a messy export<br />to a <em>clean list.</em></h1>
+        <p class="lead">
+          A customer order list arrives with extra spaces, mixed capitals, six
+          different phone formats, city codes, totals saved as text, and repeat
+          customers. Here is how I turn it into a list you can actually sort,
+          filter, and import.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="button dark"
+            href="/samples/files/data-cleanup-sample.xlsx"
+            download
+            >Download the Excel file <span aria-hidden="true">↓</span></a
+          ><a class="text-link" href="#before-after"
+            >See before and after <span aria-hidden="true">↘</span></a
+          >
+        </div>
+        <ul class="sample-meta">
+          <li><span>TOOLS</span>Excel · Google Sheets</li>
+          <li>
+            <span>FORMULAS</span>TRIM · PROPER · LOWER · SUBSTITUTE ·
+            INDEX/MATCH · COUNTIF
+          </li>
+          <li><span>RESULT</span>12 rows → 10 clean customers</li>
+        </ul>
+        <p class="sample-note">
+          Sample with fictional names and numbers. The Excel file uses live
+          formulas, so you can change a raw value and watch it clean itself.
+        </p>
+      </section>
+      <section
+        class="wrap sample-section"
+        id="before-after"
+        aria-labelledby="ba-title"
+      >
+        <h2 id="ba-title">Before and after</h2>
+        <p>
+          Dots (·) show hidden extra spaces in the raw data. Rows struck through
+          in red are repeat customers that were removed.
+        </p>
+        <div class="two-col">
+          <div class="table-card">
+            <h3>BEFORE <small>As received</small></h3>
+            <div class="table-scroll">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Customer name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Order total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="messy">··maria·SANTOS·</td>
+                    <td class="messy">Maria.Santos@Example.com·</td>
+                    <td class="messy">050 123 4567</td>
+                    <td class="messy">dubai</td>
+                    <td class="messy">AED 1,250</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">John··o&#x27;neil</td>
+                    <td class="messy">john.oneil@example.com</td>
+                    <td class="messy">+971-55-987-6543</td>
+                    <td class="messy">Dubai·</td>
+                    <td class="messy">AED 480</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">AHMED KHAN</td>
+                    <td class="messy">·ahmed.khan@example.com</td>
+                    <td class="messy">00971 52 222 3344</td>
+                    <td class="messy">DXB</td>
+                    <td class="messy">2,100</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">priya nair</td>
+                    <td class="messy">PRIYA.NAIR@EXAMPLE.COM</td>
+                    <td class="messy">(050) 765-4321</td>
+                    <td class="messy">abu dhabi</td>
+                    <td class="messy">AED 950.50</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">Maria Santos</td>
+                    <td class="messy">maria.santos@example.com</td>
+                    <td class="messy">0501234567</td>
+                    <td class="messy">Dubai</td>
+                    <td class="messy">AED 1,250</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">liam···murphy</td>
+                    <td class="messy">liam.murphy@example.com</td>
+                    <td class="messy">971 56 111 2233</td>
+                    <td class="messy">Sharjah</td>
+                    <td class="messy">AED 320</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">·Fatima·Al·Zahra</td>
+                    <td class="messy">fatima.alzahra@example.com·</td>
+                    <td class="messy">+971 50 444 5566</td>
+                    <td class="messy">AUH</td>
+                    <td class="messy">AED 2,780</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">chen wei</td>
+                    <td class="messy">Chen.Wei@example.com</td>
+                    <td class="messy">055-321-0987</td>
+                    <td class="messy">dubai·</td>
+                    <td class="messy">AED 615</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">AHMED·khan·</td>
+                    <td class="messy">Ahmed.Khan@Example.com</td>
+                    <td class="messy">+971522223344</td>
+                    <td class="messy">Dubai</td>
+                    <td class="messy">AED 2,100</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">sofia···rossi</td>
+                    <td class="messy">sofia.rossi@example.com</td>
+                    <td class="messy">058 909 1122</td>
+                    <td class="messy">SHJ</td>
+                    <td class="messy">AED 1,040</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">Daniel Okafor</td>
+                    <td class="messy">DANIEL.OKAFOR@example.com</td>
+                    <td class="messy">00971-54-678-9012</td>
+                    <td class="messy">dubai</td>
+                    <td class="messy">AED 3,300</td>
+                  </tr>
+                  <tr>
+                    <td class="messy">emily·clarke·</td>
+                    <td class="messy">emily.clarke@example.com</td>
+                    <td class="messy">0527894561</td>
+                    <td class="messy">Abu·Dhabi·</td>
+                    <td class="messy">AED 275</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="table-card">
+            <h3>AFTER <small>Cleaned and checked</small></h3>
+            <div class="table-scroll">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Customer name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Total (AED)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Maria Santos</td>
+                    <td>maria.santos@example.com</td>
+                    <td>+971 50 123 4567</td>
+                    <td>Dubai</td>
+                    <td class="num">1,250.00</td>
+                  </tr>
+                  <tr>
+                    <td>John O&#x27;Neil</td>
+                    <td>john.oneil@example.com</td>
+                    <td>+971 55 987 6543</td>
+                    <td>Dubai</td>
+                    <td class="num">480.00</td>
+                  </tr>
+                  <tr>
+                    <td>Ahmed Khan</td>
+                    <td>ahmed.khan@example.com</td>
+                    <td>+971 52 222 3344</td>
+                    <td>Dubai</td>
+                    <td class="num">2,100.00</td>
+                  </tr>
+                  <tr>
+                    <td>Priya Nair</td>
+                    <td>priya.nair@example.com</td>
+                    <td>+971 50 765 4321</td>
+                    <td>Abu Dhabi</td>
+                    <td class="num">950.50</td>
+                  </tr>
+                  <tr class="dup">
+                    <td>Maria Santos</td>
+                    <td>maria.santos@example.com</td>
+                    <td>+971 50 123 4567</td>
+                    <td>Dubai</td>
+                    <td class="num">1,250.00</td>
+                  </tr>
+                  <tr>
+                    <td>Liam Murphy</td>
+                    <td>liam.murphy@example.com</td>
+                    <td>+971 56 111 2233</td>
+                    <td>Sharjah</td>
+                    <td class="num">320.00</td>
+                  </tr>
+                  <tr>
+                    <td>Fatima Al Zahra</td>
+                    <td>fatima.alzahra@example.com</td>
+                    <td>+971 50 444 5566</td>
+                    <td>Abu Dhabi</td>
+                    <td class="num">2,780.00</td>
+                  </tr>
+                  <tr>
+                    <td>Chen Wei</td>
+                    <td>chen.wei@example.com</td>
+                    <td>+971 55 321 0987</td>
+                    <td>Dubai</td>
+                    <td class="num">615.00</td>
+                  </tr>
+                  <tr class="dup">
+                    <td>Ahmed Khan</td>
+                    <td>ahmed.khan@example.com</td>
+                    <td>+971 52 222 3344</td>
+                    <td>Dubai</td>
+                    <td class="num">2,100.00</td>
+                  </tr>
+                  <tr>
+                    <td>Sofia Rossi</td>
+                    <td>sofia.rossi@example.com</td>
+                    <td>+971 58 909 1122</td>
+                    <td>Sharjah</td>
+                    <td class="num">1,040.00</td>
+                  </tr>
+                  <tr>
+                    <td>Daniel Okafor</td>
+                    <td>daniel.okafor@example.com</td>
+                    <td>+971 54 678 9012</td>
+                    <td>Dubai</td>
+                    <td class="num">3,300.00</td>
+                  </tr>
+                  <tr>
+                    <td>Emily Clarke</td>
+                    <td>emily.clarke@example.com</td>
+                    <td>+971 52 789 4561</td>
+                    <td>Abu Dhabi</td>
+                    <td class="num">275.00</td>
+                  </tr>
+                  <tr class="total">
+                    <td colspan="4">Total (unique customers)</td>
+                    <td class="num">13,110.50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrap sample-section" aria-labelledby="fix-title">
+        <h2 id="fix-title">What I fixed, and how</h2>
+        <p>
+          Every fix is a formula on its own column, so the work is easy to check
+          and repeat on next month’s export.
+        </p>
+        <ul class="fix-list">
+          <li>
+            <b>Names</b>
+            <p>
+              <code>TRIM</code> removes extra spaces, <code>PROPER</code> fixes
+              capitals: “&nbsp;&nbsp;maria SANTOS ” → “Maria Santos”.
+            </p>
+          </li>
+          <li>
+            <b>Emails</b>
+            <p>
+              <code>TRIM</code> + <code>LOWER</code>, so the same address always
+              matches, whatever the capitals.
+            </p>
+          </li>
+          <li>
+            <b>Phone numbers</b>
+            <p>
+              Strip spaces, dashes, brackets and +, convert 05… and 00971… to
+              971…, then format as +971 5X XXX XXXX.
+            </p>
+          </li>
+          <li>
+            <b>Cities</b>
+            <p>
+              A small lookup table maps “dubai”, “DXB”, “AUH”, “SHJ” and others
+              to one standard name with <code>INDEX/MATCH</code>.
+            </p>
+          </li>
+          <li>
+            <b>Totals</b>
+            <p>
+              Remove “AED” and commas, then convert the text to a real number,
+              so totals and sorting work.
+            </p>
+          </li>
+          <li>
+            <b>Duplicates</b>
+            <p>
+              <code>COUNTIF</code> on the cleaned email flags the second
+              appearance of a customer. Removed: 2 rows.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="wrap sample-section" aria-labelledby="why-title">
+        <h2 id="why-title">Why it matters</h2>
+        <p>
+          Clean data means the customer count is right, the sales total is
+          right, and the list can go straight into a CRM, an email tool, or a
+          delivery sheet without someone fixing it by hand. Because the steps
+          are formulas, the same cleanup takes minutes next time.
+        </p>
+      </section>
+      <section class="wrap sample-next">
+        <p>Need help like this? Let’s talk.</p>
+        <a class="button dark" href="/#contact"
+          >Get in touch <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="wrap site-footer">
+      <a class="brand footer-brand" href="/"
+        >Lester Laynes<span class="brand-dot">.</span></a
+      ><span>Sample work · fictional data</span
+      ><a href="#main" class="back-top"
+        >Back to top <span aria-hidden="true">↑</span></a
+      ><span class="copyright">© 2026 Lester Laynes</span>
+    </footer>
+  </body>
+</html>
