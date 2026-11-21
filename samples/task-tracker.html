@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Client task tracker template — Lester Laynes, Virtual Assistant
+    </title>
+    <meta
+      name="description"
+      content="A VA task tracker for Excel and Google Sheets with dropdowns, due-date flags and an automatic summary. Sample by Lester Laynes."
+    />
+    <meta name="theme-color" content="#f6f5ef" />
+    <meta
+      property="og:title"
+      content="Client task tracker template — Lester Laynes, Virtual Assistant"
+    />
+    <meta
+      property="og:description"
+      content="A VA task tracker for Excel and Google Sheets with dropdowns, due-date flags and an automatic summary. Sample by Lester Laynes."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://lester-personal-portfolio.vercel.app/samples/task-tracker"
+    />
+    <meta
+      property="og:image"
+      content="https://lester-personal-portfolio.vercel.app/og-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="canonical"
+      href="https://lester-personal-portfolio.vercel.app/samples/task-tracker"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/samples/samples.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header sample-header wrap">
+      <a class="brand" href="/" aria-label="Lester Laynes home"
+        ><span class="brand-mark" aria-hidden="true">l<span>.</span></span
+        >Lester Laynes<span class="brand-dot">.</span></a
+      >
+      <nav aria-label="VA samples">
+        <a href="/samples/data-cleanup">Data cleanup</a
+        ><a href="/samples/task-tracker">Task tracker</a
+        ><a href="/samples/shopify-listing-sop">Shopify SOP</a>
+      </nav>
+      <a class="header-contact" href="/#samples"
+        ><span aria-hidden="true" style="margin: 0 12px 0 0">←</span>Back to
+        portfolio</a
+      >
+    </header>
+    <main id="main">
+      <section class="wrap sample-hero">
+        <p class="eyebrow">
+          <span class="tiny-star" aria-hidden="true">✳</span> VA SAMPLE ·
+          SPREADSHEETS & ORGANIZATION
+        </p>
+        <h1>One place to see<br /><em>what’s done.</em></h1>
+        <p class="lead">
+          A simple task tracker I use to keep clients updated: dropdowns for
+          status and priority, automatic due-date flags, and a summary tab that
+          answers “where are we?” at a glance. Works in Excel and Google Sheets.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="button dark"
+            href="/samples/files/va-task-tracker.xlsx"
+            download
+            >Download the tracker <span aria-hidden="true">↓</span></a
+          ><a class="text-link" href="#tracker"
+            >See the example <span aria-hidden="true">↘</span></a
+          >
+        </div>
+        <ul class="sample-meta">
+          <li><span>TOOLS</span>Excel · Google Sheets</li>
+          <li>
+            <span>FEATURES</span>Dropdowns · Conditional formatting · COUNTIFS
+            summary
+          </li>
+          <li>
+            <span>READY TO USE</span>Delete the examples and add your tasks
+          </li>
+        </ul>
+        <p class="sample-note">
+          Sample with fictional tasks. To use it in Google Sheets: File → Import
+          → Upload.
+        </p>
+      </section>
+      <section
+        class="wrap sample-section"
+        id="tracker"
+        aria-labelledby="tr-title"
+      >
+        <h2 id="tr-title">The tracker at a glance</h2>
+        <p>
+          Example week shown as of 21 Nov 2026. In the file, “Flag” and “Days
+          left” update every day by themselves.
+        </p>
+        <div class="stats">
+          <div><strong>10</strong><span>Tasks this week</span></div>
+          <div><strong>1</strong><span>Overdue</span></div>
+          <div><strong>2</strong><span>Due within 2 days</span></div>
+          <div><strong>1</strong><span>Waiting on client</span></div>
+          <div><strong>20%</strong><span>Complete</span></div>
+        </div>
+        <div class="table-card">
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Task</th>
+                  <th>Category</th>
+                  <th>Priority</th>
+                  <th>Status</th>
+                  <th>Due</th>
+                  <th>Flag</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="is-done">
+                  <td>
+                    Clear and label inbox; draft replies to supplier emails
+                  </td>
+                  <td>Email &amp; inbox</td>
+                  <td>High</td>
+                  <td>Done</td>
+                  <td>18 Nov</td>
+                  <td><span class="flag flag-done">Done</span></td>
+                </tr>
+                <tr class="is-done">
+                  <td>Schedule weekly team call for December</td>
+                  <td>Calendar</td>
+                  <td>Medium</td>
+                  <td>Done</td>
+                  <td>19 Nov</td>
+                  <td><span class="flag flag-done">Done</span></td>
+                </tr>
+                <tr>
+                  <td>Enter 120 new product SKUs from supplier sheet</td>
+                  <td>Data entry</td>
+                  <td>High</td>
+                  <td>In progress</td>
+                  <td>22 Nov</td>
+                  <td><span class="flag flag-soon">Due soon</span></td>
+                </tr>
+                <tr>
+                  <td>Build monthly sales summary in Google Sheets</td>
+                  <td>Spreadsheets</td>
+                  <td>Medium</td>
+                  <td>Not started</td>
+                  <td>28 Nov</td>
+                  <td><span class="flag flag-track">On track</span></td>
+                </tr>
+                <tr>
+                  <td>Update stock levels on Shopify after delivery</td>
+                  <td>E-commerce</td>
+                  <td>High</td>
+                  <td>Waiting on client</td>
+                  <td>20 Nov</td>
+                  <td><span class="flag flag-overdue">Overdue</span></td>
+                </tr>
+                <tr>
+                  <td>Research 5 packaging suppliers with prices</td>
+                  <td>Research</td>
+                  <td>Low</td>
+                  <td>Not started</td>
+                  <td>02 Dec</td>
+                  <td><span class="flag flag-track">On track</span></td>
+                </tr>
+                <tr>
+                  <td>Write SOP for processing returns</td>
+                  <td>Documents</td>
+                  <td>Medium</td>
+                  <td>In progress</td>
+                  <td>26 Nov</td>
+                  <td><span class="flag flag-track">On track</span></td>
+                </tr>
+                <tr>
+                  <td>Reconcile November invoices vs payments</td>
+                  <td>Spreadsheets</td>
+                  <td>High</td>
+                  <td>Not started</td>
+                  <td>25 Nov</td>
+                  <td><span class="flag flag-track">On track</span></td>
+                </tr>
+                <tr>
+                  <td>Reply to customer inquiries (marketplace inbox)</td>
+                  <td>Email &amp; inbox</td>
+                  <td>Medium</td>
+                  <td>In progress</td>
+                  <td>23 Nov</td>
+                  <td><span class="flag flag-soon">Due soon</span></td>
+                </tr>
+                <tr>
+                  <td>Clean and de-duplicate newsletter contact list</td>
+                  <td>Data entry</td>
+                  <td>Low</td>
+                  <td>Not started</td>
+                  <td>05 Dec</td>
+                  <td><span class="flag flag-track">On track</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="wrap sample-section" aria-labelledby="how-title">
+        <h2 id="how-title">How it helps a client</h2>
+        <ul class="fix-list">
+          <li>
+            <b>No surprises</b>
+            <p>
+              Overdue tasks turn red and tasks due within two days turn amber,
+              so problems show up before the deadline, not after.
+            </p>
+          </li>
+          <li>
+            <b>Clear blockers</b>
+            <p>
+              “Waiting on client” separates what I’m working on from what needs
+              your answer or file.
+            </p>
+          </li>
+          <li>
+            <b>Easy updates</b>
+            <p>
+              The Summary tab counts tasks by status and priority and shows %
+              complete, ready to paste into an end-of-day report.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="wrap sample-next">
+        <p>Need help like this? Let’s talk.</p>
+        <a class="button dark" href="/#contact"
+          >Get in touch <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="wrap site-footer">
+      <a class="brand footer-brand" href="/"
+        >Lester Laynes<span class="brand-dot">.</span></a
+      ><span>Sample work · fictional data</span
+      ><a href="#main" class="back-top"
+        >Back to top <span aria-hidden="true">↑</span></a
+      ><span class="copyright">© 2026 Lester Laynes</span>
+    </footer>
+  </body>
+</html>

@@ -3,4 +3,13 @@
   <url>
     <loc>https://lester-personal-portfolio.vercel.app/</loc>
   </url>
+  <url>
+    <loc>https://lester-personal-portfolio.vercel.app/samples/data-cleanup</loc>
+  </url>
+  <url>
+    <loc>https://lester-personal-portfolio.vercel.app/samples/task-tracker</loc>
+  </url>
+  <url>
+    <loc>https://lester-personal-portfolio.vercel.app/samples/shopify-listing-sop</loc>
+  </url>
 </urlset>
