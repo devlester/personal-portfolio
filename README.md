@@ -6,7 +6,7 @@ Professional portfolio for administrative support, e-commerce operations, invent
 
 ## Source and hosting
 
-`index.html`, `style.css`, and `app.js` are the current site. The portrait, social preview image (`og-image.jpg`), favicon, and resume (PDF, plus the original DOCX) are local assets in the repository root. No build step or dependencies are required. Vercel serves this root directory using `vercel.json`. Production branch: `main`.
+`index.html`, `style.css`, and `app.js` are the current site. The portrait, social preview image (`og-image-v2.jpg`), favicon, and resume (PDF, plus the original DOCX) are local assets in the repository root. No build step or dependencies are required. Vercel serves this root directory using `vercel.json`. Production branch: `main`.
 
 ## Local preview
 
